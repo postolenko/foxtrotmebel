@@ -50,7 +50,13 @@ $(document).ready(function() {
     });
 
 
-    getImgPromoSlidePosition();
+    setTimeout(function() {
+
+        getImgPromoSlidePosition();
+
+    }, 1000);
+
+    
     getPromoHeadPosition();
 
 
