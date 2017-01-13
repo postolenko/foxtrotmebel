@@ -54,11 +54,49 @@ $(document).ready(function() {
 
         getImgPromoSlidePosition();
 
-    }, 1000);
+    }, 500);
 
     
     getPromoHeadPosition();
 
+
+    // --------------------------------------------------------
+
+    var linkAttr;
+
+    // $(".main-nav-link.with-inner-nav").bind({
+
+    //   mouseenter: function() {
+
+    //     $(this).addClass("active");
+
+    //     if( $(this).hasClass("active") ) {
+
+    //         linkAttr = $(this).attr("data-link");
+
+    //         $('[data-link = inner-'+ linkAttr+']').parent(".main-nav-inner-links").fadeIn(300);
+
+    //         $('[data-link = inner-'+ linkAttr+']').addClass("active");
+
+    //         $('[data-link = inner-'+ linkAttr+']').fadeIn(300);
+
+    //     }
+
+    //   }, mouseleave: function() {
+
+    //     $(this).removeClass("active");
+
+    //     $('[data-link = inner-'+ linkAttr+']').parent(".main-nav-inner-links").fadeOut(300);
+
+    //     $('[data-link = inner-'+ linkAttr+']').fadeOut(300);
+
+
+    //   }
+
+    // });
+
+
+    // --------------------------------------------------------
 
 
         // var countPromoSlides = $(".promo-slide").length - 1;
