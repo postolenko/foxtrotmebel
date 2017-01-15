@@ -38,6 +38,8 @@ $(document).ready(function() {
         getImgPromoSlidePosition();
         getPromoHeadPosition();
 
+        getMiniatureSize();
+
     });
 
 
@@ -58,6 +60,8 @@ $(document).ready(function() {
 
     
     getPromoHeadPosition();
+
+    getMiniatureSize();
 
 
     // --------------------------------------------------------
@@ -244,6 +248,70 @@ $(document).ready(function() {
                 "left" : ( $(".promo-block").outerWidth(true) - $(".promo-h").outerWidth(true) ) / 2  + "px"
 
             });
+
+        }
+
+
+        function getMiniatureSize() {
+
+            var miniaturesCount = $(".miniature-box").length - 1;
+
+            var miniatureIndex;
+
+            var minatureWidth;
+            var miniatureHeight;
+
+            var minatureWidthImg;
+            var miniatureHeightImg;
+
+            for( miniatureIndex = 0; miniatureIndex <= miniaturesCount; miniatureIndex++ ) {
+
+                minatureWidth = $(".miniature-box:eq("+ miniatureIndex  +")").width();
+
+                minatureHeight = $(".miniature-box:eq("+ miniatureIndex  +")").height();
+
+                minatureWidthImg = $(".miniature-box:eq("+ miniatureIndex  +") img").width();
+
+                minatureHeightImg = $(".miniature-box:eq("+ miniatureIndex  +") img").height();
+
+                if( minatureWidthImg < minatureWidth && minatureHeightImg >= minatureHeight ) {
+
+                    $(".miniature-box:eq("+ miniatureIndex  +") img").css({
+                        "min-width" : 100 + "%",
+                        "height" : "auto"
+                    });
+
+                    // $(".miniature-box:eq("+ miniatureIndex  +") img").addClass("size-1");
+
+                } else if( minatureWidthImg > minatureWidth && minatureHeightImg <= minatureHeight) {
+
+                    $(".miniature-box:eq("+ miniatureIndex  +") img").css({
+                        "min-height" : 100 + "%",
+                        "width" : "auto"
+                    });
+
+                    // $(".miniature-box:eq("+ miniatureIndex  +") img").addClass("size-2");
+
+                } else if( minatureWidthImg < minatureWidth && minatureHeightImg < minatureHeight ) {
+
+                    $(".miniature-box:eq("+ miniatureIndex  +") img").css({
+                        "min-height" : 100 + "%",
+                        "min-width" : 100 + "%"
+                    });
+
+                    // $(".miniature-box:eq("+ miniatureIndex  +") img").addClass("size-3");
+
+                } else if( minatureWidthImg > minatureWidth && minatureHeightImg > minatureHeight ) {
+
+                    $(".miniature-box:eq("+ miniatureIndex  +") img").css({
+                        "max-width" : 100 + "%",
+                        "height" : "auto"
+                    });
+
+                    // $(".miniature-box:eq("+ miniatureIndex  +") img").addClass("size-4");
+                }
+
+            }
 
         }
 

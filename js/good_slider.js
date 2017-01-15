@@ -39,10 +39,6 @@ $(document).ready(function() {
 
 			$(".preview-img").attr("src", previewPhotoPath + nameFileBigPhoto);
 
-			console.log(nameFileBigPhoto);
-
-			console.log($(".preview-img"));
-
 		});
 
 		$(".preview-bg, .zoom-out").click(function() {
