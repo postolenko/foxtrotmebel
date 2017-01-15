@@ -159,7 +159,7 @@ $(document).ready(function() {
 
                     }
 
-                }, 300);
+                }, 400);
 
             }
 
@@ -192,7 +192,7 @@ $(document).ready(function() {
                     
                     $(".search-form-box").fadeOut(300);
 
-            }, 300);
+            }, 400);
 
         }                
 
