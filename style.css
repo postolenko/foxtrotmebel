@@ -2370,7 +2370,7 @@ section.main-set-2 {
     transform: rotate(45deg);
 }
 
-.zoom-slide-btn .fa-search-plus {
+.zoom-slide-btn .fa {
     font-size: 19px;
     line-height: 19px;
     color: #ffffff;
@@ -2431,6 +2431,7 @@ section.main-set-2 {
     left: 0;
     opacity: 0;
     background: rgba(36, 183, 177, 0.3);
+    z-index: 2;
 
     -webkit-transition-property: opacity;
     -webkit-transition-duration: .3s;
@@ -2456,6 +2457,44 @@ section.main-set-2 {
 .miniature-box:hover:after {
     opacity: 1;
 }
+
+.preview-slide {
+    /*display: block;*/
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+
+.preview-slide .preview-bg {
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, .7);
+}
+
+.preview-slide .preview-img {
+    display: block;
+    max-width: 700px;
+    max-height: 500px;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.preview-slide .zoom-out {
+
+}
+
 
 .table-row {
     padding: 5px 0 20px 0;
