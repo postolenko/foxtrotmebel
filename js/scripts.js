@@ -362,20 +362,19 @@ $(document).ready(function() {
 
                     }
 
-                    if( promoHeightImg > promoSlideHeight && promoWidthImg > promoSlideWidth ) {
+                    // if( promoHeightImg > promoSlideHeight && promoWidthImg > promoSlideWidth ) {
 
-                        // $(".good-slider-big-photo img").css({
-                        //     "min-width" : sliderBigPhotoWidth + "px",
-                        //     "min-height" : sliderBigPhotoHeight + "px"
-                        // });
+                    //     // $(".good-slider-big-photo img").css({
+                    //     //     "min-width" : sliderBigPhotoWidth + "px",
+                    //     //     "min-height" : sliderBigPhotoHeight + "px"
+                    //     // });
 
-                        $(".promo-slide:eq("+ promoSlideCountIndex  +") img").css({
-                            "min-width" : 100 +"%",
-                            "min-height" : promoSlideHeight + "px"
-                        });
+                    //     $(".promo-slide:eq("+ promoSlideCountIndex  +") img").css({
+                    //         "min-width" : 100 +"%",
+                    //         "min-height" : promoSlideHeight + "px"
+                    //     });
 
-                    }
-
+                    // }
                     
 
                     if( promoWidthImg > promoSlideWidth ) {
