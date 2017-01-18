@@ -375,8 +375,7 @@ $(document).ready(function() {
                     //         "min-height" : promoSlideHeight + "px"
                     //     });
 
-                    // }
-                    
+                    // }                   
 
                     if( promoWidthImg > promoSlideWidth ) {
 
@@ -387,6 +386,7 @@ $(document).ready(function() {
                         });
 
                     }
+                    
 
                 }
 
