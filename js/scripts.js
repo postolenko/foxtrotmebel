@@ -362,11 +362,21 @@ $(document).ready(function() {
 
                     }
 
-                    $(".promo-slide:eq("+ promoSlideCountIndex +") img").css({
+                    if( promoHeightImg > promoSlideHeight && promoWidthImg > promoSlideWidth ) {
 
-                        "margin-left" : -( ( promoWidthImg - promoSlideWidth ) / 2 ) + "px"
+                        // $(".good-slider-big-photo img").css({
+                        //     "min-width" : sliderBigPhotoWidth + "px",
+                        //     "min-height" : sliderBigPhotoHeight + "px"
+                        // });
 
-                    });
+                        $(".promo-slide:eq("+ promoSlideCountIndex  +") img").css({
+                            "max-width" : promoSlideWidth + "px",
+                            "height" : "auto"
+                        });
+
+                    }
+
+                    
 
                     // if( promoWidthImg > promoSlideWidth ) {
 
@@ -399,6 +409,12 @@ $(document).ready(function() {
                 // }
 
             }, 1000);
+
+                    $(".promo-slide:eq("+ promoSlideCountIndex +") img").css({
+
+                        "margin-left" : -( ( promoWidthImg - promoSlideWidth ) / 2 ) + "px"
+
+                    });
 
         }
 
