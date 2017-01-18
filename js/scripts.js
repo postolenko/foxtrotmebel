@@ -335,30 +335,13 @@ $(document).ready(function() {
 
                     promoHeightImg = $(".promo-slide:eq("+ promoSlideCountIndex +") img").outerHeight();
 
-                    // console.log(promoSlideWidth +"  "+ promoSlideHeight +"  "+ promoWidthImg +"  "+ promoHeightImg +"  "+ promoSlideCountIndex);
-
-                    // if( promoWidthImg > promoSlideWidth || promoHeightImg > promoSlideHeight ) {
-
-                    //     $(".promo-slide:eq("+ promoSlideCountIndex  +") img").css({
-                    //         "min-width" : 100 + "%",
-                    //         "min-height" : 100 + "%"
-                    //     });
-
-                    //     console.log("1");
-
-                    // }
-
                     if( promoHeightImg < promoSlideHeight || promoWidthImg < promoSlideWidth ) {
-
-                        // $(".good-slider-big-photo img").css({
-                        //     "min-width" : sliderBigPhotoWidth + "px",
-                        //     "min-height" : sliderBigPhotoHeight + "px"
-                        // });
 
                         $(".promo-slide:eq("+ promoSlideCountIndex  +") img").css({
                             "min-width" : promoSlideWidth + "px",
                             "min-height" : promoSlideHeight + "px",
-                            "height" : "auto"
+                            "height" : "auto",
+                            "min-width" : "100%"
                             // "min-height" : 100 + "%"
                         });
 
