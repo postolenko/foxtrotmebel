@@ -661,6 +661,12 @@
 	    height: 140px;
 	}
 
+	.popup-1-thumbnails .thumbnail {
+	    display: block;
+	    width: 100%;
+	    height: 140px;
+	}
+
 	.popup-1-thumbnails .img-popup-box img {
 	    height: auto;
 	    min-width: 100%;
