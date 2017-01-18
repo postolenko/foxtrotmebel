@@ -371,7 +371,7 @@ $(document).ready(function() {
 
                         $(".promo-slide:eq("+ promoSlideCountIndex  +") img").css({
                             "max-width" : promoSlideWidth + "px",
-                            "height" : "auto"
+                            "min-height" : "auto"
                         });
 
                     }
