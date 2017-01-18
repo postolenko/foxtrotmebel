@@ -370,7 +370,7 @@ $(document).ready(function() {
                         // });
 
                         $(".promo-slide:eq("+ promoSlideCountIndex  +") img").css({
-                            "max-width" : promoSlideWidth + "px",
+                            "min-width" : promoSlideWidth + "px",
                             "min-height" : "auto"
                         });
 
