@@ -58,7 +58,7 @@ $(document).ready(function() {
 
         // ----------------------------------------------------------------------------
 
-        // clearInterval(positionInterval);
+        clearTimeout(positionInterval);
 
         getImgPromoSlidePosition();
 
@@ -322,7 +322,7 @@ $(document).ready(function() {
             promoWidthImg;
             promoHeightImg;
 
-            // positionInterval = setTimeout(function() {
+            positionInterval = setTimeout(function() {
 
 
                 for( promoSlideCountIndex = 0; promoSlideCountIndex <= promoSlideCount; promoSlideCountIndex++ ) {
@@ -383,7 +383,7 @@ $(document).ready(function() {
 
                 }
 
-            // }, 1000);
+            }, 1000);
 
         }
 
