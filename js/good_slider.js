@@ -1,5 +1,21 @@
 $(document).ready(function() {
 
+	var bigPhotoHeight;
+    var sliderBigPhotoHeight;
+    var bigPhotoWidth;
+	var sliderBigPhotoWidth;
+
+
+    getBigSliderPhotoImg();
+
+    $(window).resize(function() {
+
+    	getBigSliderPhotoImg();
+
+    });
+
+
+
 	$(function() {
 
 		var bigPhotoPath = "good_slider/big_photos/";
@@ -16,13 +32,13 @@ $(document).ready(function() {
 
 			var nameFile = srcVal.slice(indexOfSlash + 1);
 
-			console.log(nameFile);
-
 			$(".big_photo").css({"opacity" : .3});
 
 			$(".big_photo").attr("src", bigPhotoPath + nameFile);
 
 			$(".big_photo").css({"opacity" : 1});
+
+			getBigSliderPhotoImg();
 
 		});
 
@@ -50,5 +66,27 @@ $(document).ready(function() {
 
 
 	});
+
+
+    function getBigSliderPhotoImg() {
+
+       	bigPhotoHeight = $(".good-slider-big-photo img").height();
+
+       	sliderBigPhotoHeight = $(".good-slider-big-photo").height();
+
+       	bigPhotoWidth = $(".good-slider-big-photo img").width();
+
+       	sliderBigPhotoWidth = $(".good-slider-big-photo").width();
+
+        if( bigPhotoHeight < sliderBigPhotoHeight || bigPhotoWidth < sliderBigPhotoWidth ) {
+
+            $(".good-slider-big-photo img").css({
+                "min-width" : sliderBigPhotoWidth + "px",
+                "min-height" : sliderBigPhotoHeight + "px"
+            });
+
+        }
+
+    }
 
 });
