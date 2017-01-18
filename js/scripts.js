@@ -58,7 +58,7 @@ $(document).ready(function() {
 
         // ----------------------------------------------------------------------------
 
-        clearTimeout(positionInterval);
+        // clearTimeout(positionInterval);
 
         getImgPromoSlidePosition();
 
@@ -300,7 +300,7 @@ $(document).ready(function() {
 
         function getPromoSlideImgSize() {
 
-            // clearInterval(positionInterval);
+            clearTimeout(positionInterval);
 
             // var promoSlideCount = $(".promo-slide").length - 1;
 
@@ -327,13 +327,13 @@ $(document).ready(function() {
 
                 for( promoSlideCountIndex = 0; promoSlideCountIndex <= promoSlideCount; promoSlideCountIndex++ ) {
 
-                    promoSlideWidth = $(".promo-slide:eq("+ promoSlideCountIndex +")").width();
+                    promoSlideWidth = $(".promo-slide:eq("+ promoSlideCountIndex +")").outerWidth();
 
-                    promoSlideHeight = $(".promo-slide:eq("+ promoSlideCountIndex +")").height();
+                    promoSlideHeight = $(".promo-slide:eq("+ promoSlideCountIndex +")").outerHeight();
 
-                    promoWidthImg = $(".promo-slide:eq("+ promoSlideCountIndex +") img").width();
+                    promoWidthImg = $(".promo-slide:eq("+ promoSlideCountIndex +") img").outerWidth();
 
-                    promoHeightImg = $(".promo-slide:eq("+ promoSlideCountIndex +") img").height();
+                    promoHeightImg = $(".promo-slide:eq("+ promoSlideCountIndex +") img").outerHeight();
 
                     // console.log(promoSlideWidth +"  "+ promoSlideHeight +"  "+ promoWidthImg +"  "+ promoHeightImg +"  "+ promoSlideCountIndex);
 
@@ -362,26 +362,41 @@ $(document).ready(function() {
 
                     }
 
-                }
+                    $(".promo-slide:eq("+ promoSlideCountIndex +") img").css({
 
+                            "margin-left" : -( ( promoWidthImg - promoSlideWidth ) / 2 ) + "px"
 
-                for( promoSlideIndex = 0; promoSlideIndex <= promoSlideCount; promoSlideIndex++ ) {
+                        });
 
-                        promoSlideWidth = $(".promo-slide:eq("+ promoSlideIndex +")").width();
+                    // if( promoWidthImg > promoSlideWidth ) {
 
-                        slideImgWidth = $(".promo-slide:eq("+ promoSlideIndex +") img").outerWidth();
+                        $(".promo-slide:eq("+ promoSlideCountIndex +") img").css({
 
-                        if( slideImgWidth > promoSlideWidth ) {
+                            "margin-left" : -( ( promoWidthImg - promoSlideWidth ) / 2 ) + "px"
 
-                            $(".promo-slide:eq("+ promoSlideIndex +") img").css({
+                        });
 
-                                "margin-left" : -( ( slideImgWidth - promoSlideWidth ) / 2 ) + "px"
-
-                            });
-
-                        }
+                    // }
 
                 }
+
+
+                // for( promoSlideIndex = 0; promoSlideIndex <= promoSlideCount; promoSlideIndex++ ) {
+
+                //         promoSlideWidth = $(".promo-slide:eq("+ promoSlideIndex +")").width();
+
+                //         slideImgWidth = $(".promo-slide:eq("+ promoSlideIndex +") img").outerWidth();
+
+                //         if( slideImgWidth > promoSlideWidth ) {
+
+                //             $(".promo-slide:eq("+ promoSlideIndex +") img").css({
+
+                //                 "margin-left" : -( ( slideImgWidth - promoSlideWidth ) / 2 ) + "px"
+
+                //             });
+
+                //         }
+                // }
 
             }, 1000);
 
