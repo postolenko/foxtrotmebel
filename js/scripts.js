@@ -340,8 +340,7 @@ $(document).ready(function() {
                         $(".promo-slide:eq("+ promoSlideCountIndex  +") img").css({
                             "min-width" : promoSlideWidth + "px",
                             "min-height" : promoSlideHeight + "px",
-                            "height" : "auto",
-                            "min-width" : "100%"
+                            "height" : "auto"
                             // "min-height" : 100 + "%"
                         });
 
