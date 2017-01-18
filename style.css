@@ -1596,6 +1596,7 @@ h1.promo-h {
     min-height: 100%;
 /*    min-width: 100%;
     min-height: 100%;*/
+    position: relative;
 }
 
 .pseudo-bottom {
