@@ -404,6 +404,36 @@ $(document).ready(function() {
 
         // ----------------------------------------------------------------
 
+        $(".close-popup, .popup-box-bg ").click(function() {
+
+            $(".popup-box").fadeOut(300);
+
+        });
+
+        $(".img-material-box").click(function() {
+
+            $(this).prev("input").click();
+
+        });
+
+        $(".to-top").click(function() {
+
+            $(".mCSB_container").animate({"top" : 0 + "px"}, 350);
+
+        });
+
+        $(".reset-btn").click(function() {
+
+            $(".popup input").removeAttr('checked');
+
+            $(".popup input").removeAttr('checked');
+
+        });
+
+
+
+        // ----------------------------------------------------------------
+
 
         function getPromoHeadPosition() {
 

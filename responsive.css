@@ -292,6 +292,14 @@
 
     /*-- /Footer --*/
 
+	/*-- Popup --*/
+
+    .popup-1-material-thumbnails .material {
+	    width: 20%;
+	}
+
+	/*-- /Popups --*/
+
 }
 
 @media only screen and (max-width: 650px) {
@@ -348,6 +356,23 @@
 
 
 	/*-- /Product Page - Section 1 --*/
+
+	.popup-1-thumbnails .thumbnail-box {
+	    width: 50%;
+	}
+
+	/*-- Popup --*/
+
+	.popup-1-form .category {
+	    width: 33.33%;
+	}
+
+    .popup-1-material-thumbnails .material {
+	    width: 25%;
+	}
+
+
+	/*-- /Popups --*/
 
 }
 
@@ -611,6 +636,39 @@
 
     /*-- /Footer --*/
 
+    /*-- Popup --*/
+
+	.popup-1-header h2 {
+		padding: 0 12% 0 0;
+		font-size: 36px;
+		line-height: 38px;
+	}
+
+	.close-popup {
+	    width: 34px;
+	}
+
+    .popup-1-thumbnails .thumbnail-box {
+	    width: 76%;
+	    display: block;
+	    margin: 0 auto;
+	}
+
+	.popup-1-form .category {
+		width: 50%;
+	}
+
+	.popup-1-material-thumbnails .material {
+		width: 33.33%;
+	}
+
+	.popup-buttons .to-top {
+	    position: relative;
+	    margin: 16px auto;
+	}
+
+	/*-- /Popups --*/
+
 }
 
 
@@ -662,6 +720,25 @@
 	}
 
 	/*-- /Product Page - Section 1 --*/
+
+	/*-- Popup --*/
+
+	.popup-1-thumbnails .thumbnail-box {
+	    width: 100%;
+	    display: block;
+	    margin: 0 auto;
+	}
+
+	.popup-1-material-thumbnails .material {
+		width: 50%;
+	}
+
+	.blue-btn {
+	    font-size: 19px;
+	    line-height: 24px;
+	}
+
+	/*-- /Popup --*/
 
 }
 
