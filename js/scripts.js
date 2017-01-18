@@ -428,7 +428,7 @@ $(document).ready(function() {
 
             $(".popup input").removeAttr('checked');
 
-            $(".popup select").removeAttr('checked');
+            $('.popup select').val("0")
 
         });
 

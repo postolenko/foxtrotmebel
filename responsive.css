@@ -298,6 +298,15 @@
 	    width: 20%;
 	}
 
+	.popup-2-thumbnails .thumbnail {
+	    width: 100%;
+	}
+
+	.thumb-select h3 {
+	    font-size: 17px;
+	    line-height: 29px;
+	}
+
 	/*-- /Popups --*/
 
 }
@@ -365,6 +374,11 @@
 
 	.popup-1-form .category {
 	    width: 33.33%;
+	}
+
+	.popup-buttons .to-top {
+	    position: relative;
+	    margin: 16px auto;
 	}
 
     .popup-1-material-thumbnails .material {
@@ -692,11 +706,6 @@
 
 	.popup-1-material-thumbnails .material {
 		width: 33.33%;
-	}
-
-	.popup-buttons .to-top {
-	    position: relative;
-	    margin: 16px auto;
 	}
 
 	/*-- /Popups --*/
