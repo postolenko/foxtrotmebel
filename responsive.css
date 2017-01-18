@@ -708,6 +708,30 @@
 		width: 33.33%;
 	}
 
+	.additional-elem-row .col-1,
+	.additional-elem-row .col-2 {
+	    width: 100%;
+	    padding: 7px 0;
+	}
+
+	.additional-elem-row .col-2 {
+	    text-align: center;
+	}
+
+	.count-elements {
+		display: block;
+		width: 100%;
+	}
+
+	.count-elements .elem-minus-btn,
+	.count-elements .elem-plus-btn {
+	    width: 20%;
+	}
+
+	.count-elements-val {
+	    max-width: 60%;
+	}
+
 	/*-- /Popups --*/
 
 }

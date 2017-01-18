@@ -428,11 +428,33 @@ $(document).ready(function() {
 
             $(".popup input").removeAttr('checked');
 
-            $('.popup select').val("0")
+            $('.popup select').val("0");
+
+            $('.popup .count-elements-val').val("0");
 
         });
 
+        // ----------------------------------------------------------------
 
+        $(".count-elements button").click(function() {
+
+            var countElementsInputIndex = $(this).parent(".count-elements").index(".count-elements");
+
+            var countElementsVal = $(".count-elements-val:eq("+ countElementsInputIndex +")").val();
+
+            if( $(this).hasClass("elem-minus-btn") && countElementsVal > 0 ) {
+
+                countElementsVal--;
+
+            } else if( $(this).hasClass("elem-plus-btn") ) {
+
+                countElementsVal++;
+
+            }
+
+            $(".count-elements-val:eq("+ countElementsInputIndex +")").val(countElementsVal);
+
+        });
 
         // ----------------------------------------------------------------
 
