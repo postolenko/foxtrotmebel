@@ -378,7 +378,7 @@ $(document).ready(function() {
 
                     
 
-                    // if( promoWidthImg > promoSlideWidth ) {
+                    if( promoWidthImg > promoSlideWidth ) {
 
                         $(".promo-slide:eq("+ promoSlideCountIndex +") img").css({
 
@@ -386,7 +386,7 @@ $(document).ready(function() {
 
                         });
 
-                    // }
+                    }
 
                 }
 
