@@ -649,9 +649,34 @@
 	}
 
     .popup-1-thumbnails .thumbnail-box {
-	    width: 76%;
+	    width: 80%;
 	    display: block;
 	    margin: 0 auto;
+	}
+
+	.popup-1-thumbnails .img-popup-box {
+	    display: inline-block;
+	    vertical-align: top;
+	    width: 50%;
+	    height: 140px;
+	}
+
+	.popup-1-thumbnails .img-popup-box img {
+	    height: auto;
+	    min-width: 100%;
+	    height: 100%;
+	    border: none;
+	}
+
+	.popup-1-thumbnails .thumb-desc {
+	    display: inline-block;
+	    vertical-align: top;
+	    width: 50%;
+	    height: 140px;
+	}
+
+	.popup-1-thumbnails .thumb-desc p {
+		padding: 47px 1%;
 	}
 
 	.popup-1-form .category {
