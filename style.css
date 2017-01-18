@@ -1595,12 +1595,12 @@ h1.promo-h {
     display: block;
     width: auto;
     min-height: 100%;
-    margin: auto;
-    position: absolute;
+    margin: 0 auto;
+/*    position: absolute;
     top: 0;
     left: 0;
     bottom: 0;
-    right: 0;
+    right: 0;*/
 /*    min-width: 100%;
     min-height: 100%;*/
 }
