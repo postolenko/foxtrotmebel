@@ -364,17 +364,17 @@ $(document).ready(function() {
 
                     $(".promo-slide:eq("+ promoSlideCountIndex +") img").css({
 
-                            "margin-left" : -( ( promoWidthImg - promoSlideWidth ) / 2 ) + "px"
+                        "margin-left" : -( ( promoWidthImg - promoSlideWidth ) / 2 ) + "px"
 
-                        });
+                    });
 
                     // if( promoWidthImg > promoSlideWidth ) {
 
-                        $(".promo-slide:eq("+ promoSlideCountIndex +") img").css({
+                    //     $(".promo-slide:eq("+ promoSlideCountIndex +") img").css({
 
-                            "margin-left" : -( ( promoWidthImg - promoSlideWidth ) / 2 ) + "px"
+                    //         "margin-left" : -( ( promoWidthImg - promoSlideWidth ) / 2 ) + "px"
 
-                        });
+                    //     });
 
                     // }
 
