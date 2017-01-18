@@ -58,7 +58,7 @@ $(document).ready(function() {
 
         // ----------------------------------------------------------------------------
 
-        clearInterval(positionInterval);
+        // clearInterval(positionInterval);
 
         getImgPromoSlidePosition();
 
@@ -300,6 +300,8 @@ $(document).ready(function() {
 
         function getPromoSlideImgSize() {
 
+            // clearInterval(positionInterval);
+
             // var promoSlideCount = $(".promo-slide").length - 1;
 
             // var promoSlideCountIndex;
@@ -320,50 +322,52 @@ $(document).ready(function() {
             promoWidthImg;
             promoHeightImg;
 
-            positionInterval = setTimeout(function() {
+            // positionInterval = setTimeout(function() {
 
 
-                // for( promoSlideCountIndex = 0; promoSlideCountIndex <= promoSlideCount; promoSlideCountIndex++ ) {
+                for( promoSlideCountIndex = 0; promoSlideCountIndex <= promoSlideCount; promoSlideCountIndex++ ) {
 
-                //     promoSlideWidth = $(".promo-slide:eq("+ promoSlideCountIndex +")").width();
+                    promoSlideWidth = $(".promo-slide:eq("+ promoSlideCountIndex +")").width();
 
-                //     promoSlideHeight = $(".promo-slide:eq("+ promoSlideCountIndex +")").outerHeight(true);
+                    promoSlideHeight = $(".promo-slide:eq("+ promoSlideCountIndex +")").height();
 
-                //     promoWidthImg = $(".promo-slide:eq("+ promoSlideCountIndex +") img").width();
+                    promoWidthImg = $(".promo-slide:eq("+ promoSlideCountIndex +") img").width();
 
-                //     promoHeightImg = $(".promo-slide:eq("+ promoSlideCountIndex +") img").height();
+                    promoHeightImg = $(".promo-slide:eq("+ promoSlideCountIndex +") img").height();
 
-                //     // if( promoWidthImg < promoSlideWidth && promoHeightImg >= promoSlideHeight ) {
+                    // console.log(promoSlideWidth +"  "+ promoSlideHeight +"  "+ promoWidthImg +"  "+ promoHeightImg +"  "+ promoSlideCountIndex);
 
-                //     //     $(".promo-slide:eq("+ promoSlideCountIndex  +") img").css({
-                //     //         "min-width" : 100 + "%",
-                //     //         "height" : "auto"
-                //     //     });
+                    // if( promoWidthImg > promoSlideWidth || promoHeightImg > promoSlideHeight ) {
 
-                //     //     console.log("1");
+                    //     $(".promo-slide:eq("+ promoSlideCountIndex  +") img").css({
+                    //         "min-width" : 100 + "%",
+                    //         "min-height" : 100 + "%"
+                    //     });
 
-                //     // }
+                    //     console.log("1");
 
-                //     if( promoHeightImg < promoSlideHeight || promoWidthImg < promoSlideWidth ) {
+                    // }
 
-                //         // $(".good-slider-big-photo img").css({
-                //         //     "min-width" : sliderBigPhotoWidth + "px",
-                //         //     "min-height" : sliderBigPhotoHeight + "px"
-                //         // });
+                    if( promoHeightImg < promoSlideHeight || promoWidthImg < promoSlideWidth ) {
 
-                //         $(".promo-slide:eq("+ promoSlideCountIndex  +") img").css({
-                //             "min-width" : promoSlideWidth + "px",
-                //             "min-height" : promoSlideHeight + "px"
-                //         });
+                        // $(".good-slider-big-photo img").css({
+                        //     "min-width" : sliderBigPhotoWidth + "px",
+                        //     "min-height" : sliderBigPhotoHeight + "px"
+                        // });
 
-                //     }
+                        $(".promo-slide:eq("+ promoSlideCountIndex  +") img").css({
+                            "min-width" : promoSlideWidth + "px",
+                            "min-height" : promoSlideHeight + "px"
+                        });
 
-                // }
+                    }
+
+                }
 
 
                 for( promoSlideIndex = 0; promoSlideIndex <= promoSlideCount; promoSlideIndex++ ) {
 
-                        promoSlideWidth = $(".promo-slide:eq("+ promoSlideIndex +")").outerWidth();
+                        promoSlideWidth = $(".promo-slide:eq("+ promoSlideIndex +")").width();
 
                         slideImgWidth = $(".promo-slide:eq("+ promoSlideIndex +") img").outerWidth();
 
@@ -379,7 +383,7 @@ $(document).ready(function() {
 
                 }
 
-            }, 1000);
+            // }, 1000);
 
         }
 

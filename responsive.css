@@ -131,6 +131,11 @@
 		height: 450px;
 	}
 
+	.promo-slider div img {
+	    width: auto;
+	    max-height: 100%;
+	}
+
 	h1.promo-h {
 		font-size: 32px;
 		line-height: 66px;
