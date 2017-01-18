@@ -380,11 +380,11 @@ $(document).ready(function() {
 
                     // if( promoWidthImg > promoSlideWidth ) {
 
-                    //     $(".promo-slide:eq("+ promoSlideCountIndex +") img").css({
+                        $(".promo-slide:eq("+ promoSlideCountIndex +") img").css({
 
-                    //         "margin-left" : -( ( promoWidthImg - promoSlideWidth ) / 2 ) + "px"
+                            "margin-left" : -( ( promoWidthImg - promoSlideWidth ) / 2 ) + "px"
 
-                    //     });
+                        });
 
                     // }
 
@@ -410,11 +410,7 @@ $(document).ready(function() {
 
             }, 1000);
 
-                    $(".promo-slide:eq("+ promoSlideCountIndex +") img").css({
-
-                        "margin-left" : -( ( promoWidthImg - promoSlideWidth ) / 2 ) + "px"
-
-                    });
+                   
 
         }
 
