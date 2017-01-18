@@ -4,19 +4,6 @@
 /*-- Fonts --*/
 /*------------------*/
 
-
-@font-face {
-    font-family: "Time Roman";
-    src: url("fonts/Time-RomanBold.eot");
-    src: url("fonts/Time-RomanBold.eot?#iefix") format("embedded-opentype"),
-        url("fonts/Time-RomanBold.woff2") format("woff2"),
-        url("fonts/Time-RomanBold.woff") format("woff"),
-        url("fonts/Time-RomanBold.ttf") format("truetype"),
-        url("fonts/Time-RomanBold.svg#Time-RomanBold") format("svg");
-    font-weight: bold;
-    font-style: normal;
-}
-
 @font-face {
     font-family: "Arial";
     src: url("fonts/rialMT.eot");
@@ -174,7 +161,14 @@ section {
 }
 
 h1 {
-
+    display: inline-block;
+    vertical-align: middle;
+    font-family: Times New Roman, Arial, Verdana, sans-serif;
+    font-size: 100px;
+    line-height: 176px;
+    font-weight: bold;
+    color: #00c4ac;
+    text-transform: uppercase;
 }
 
 
@@ -1569,8 +1563,7 @@ h1.promo-h {
     vertical-align: middle;
     border: 1px solid #00c4ac;
     padding: 0 40px;
-    font-family: Times New Roman, "Time Roman", Arial, Verdana, sans-serif;
-    /*font-family: "Time Roman", Arial, Verdana, sans-serif;*/
+    font-family: Times New Roman, Arial, Verdana, sans-serif;
     font-size: 100px;
     line-height: 176px;
     font-weight: bold;

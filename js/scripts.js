@@ -1,18 +1,5 @@
 $(document).ready(function() {
 
-    //   preload
-    // $(window).on('load', function () {
-
-    //     setTimeout(function() {
-
-    //         $(".preload-bg").fadeOut(500);
-
-    //     }, 700);
-  
-
-    // });
-
-
     // ---------------------------------------------------
 
     var countPromoSlides = $(".promo-slide").length - 1;
@@ -346,20 +333,6 @@ $(document).ready(function() {
 
                     }
 
-                    // if( promoHeightImg > promoSlideHeight && promoWidthImg > promoSlideWidth ) {
-
-                    //     // $(".good-slider-big-photo img").css({
-                    //     //     "min-width" : sliderBigPhotoWidth + "px",
-                    //     //     "min-height" : sliderBigPhotoHeight + "px"
-                    //     // });
-
-                    //     $(".promo-slide:eq("+ promoSlideCountIndex  +") img").css({
-                    //         "min-width" : 100 +"%",
-                    //         "min-height" : promoSlideHeight + "px"
-                    //     });
-
-                    // }                   
-
                     if( promoWidthImg > promoSlideWidth ) {
 
                         $(".promo-slide:eq("+ promoSlideCountIndex +") img").css({
@@ -373,23 +346,6 @@ $(document).ready(function() {
 
                 }
 
-
-                // for( promoSlideIndex = 0; promoSlideIndex <= promoSlideCount; promoSlideIndex++ ) {
-
-                //         promoSlideWidth = $(".promo-slide:eq("+ promoSlideIndex +")").width();
-
-                //         slideImgWidth = $(".promo-slide:eq("+ promoSlideIndex +") img").outerWidth();
-
-                //         if( slideImgWidth > promoSlideWidth ) {
-
-                //             $(".promo-slide:eq("+ promoSlideIndex +") img").css({
-
-                //                 "margin-left" : -( ( slideImgWidth - promoSlideWidth ) / 2 ) + "px"
-
-                //             });
-
-                //         }
-                // }
 
             }, 500);
 
