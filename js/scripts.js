@@ -378,15 +378,15 @@ $(document).ready(function() {
                     // }
                     
 
-                    // if( promoWidthImg > promoSlideWidth ) {
+                    if( promoWidthImg > promoSlideWidth ) {
 
-                    //     $(".promo-slide:eq("+ promoSlideCountIndex +") img").css({
+                        $(".promo-slide:eq("+ promoSlideCountIndex +") img").css({
 
-                    //         "margin-left" : -( ( promoWidthImg - promoSlideWidth ) / 2 ) + "px"
+                            "margin-left" : -( ( promoWidthImg - promoSlideWidth ) / 2 ) + "px"
 
-                    //     });
+                        });
 
-                    // }
+                    }
 
                 }
 
