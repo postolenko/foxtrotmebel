@@ -357,7 +357,8 @@ $(document).ready(function() {
 
                         $(".promo-slide:eq("+ promoSlideCountIndex  +") img").css({
                             "min-width" : promoSlideWidth + "px",
-                            "min-height" : promoSlideHeight + "px"
+                            // "min-height" : promoSlideHeight + "px"
+                            "min-height" : 100 + "%"
                         });
 
                     }
