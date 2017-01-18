@@ -322,7 +322,7 @@ $(document).ready(function() {
             promoWidthImg;
             promoHeightImg;
 
-            positionInterval = setTimeout(function() {
+            // positionInterval = setTimeout(function() {
 
 
                 for( promoSlideCountIndex = 0; promoSlideCountIndex <= promoSlideCount; promoSlideCountIndex++ ) {
@@ -407,7 +407,7 @@ $(document).ready(function() {
                 //         }
                 // }
 
-            }, 500);
+            // }, 500);
 
                    
 
