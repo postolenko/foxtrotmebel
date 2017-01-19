@@ -4331,6 +4331,7 @@ footer {
     background: rgba(243, 243, 243, 1);
     margin: 5px 0;
     padding: 10px 2%;
+    position: relative;
 }
 
 .additional-elem-row .col {
