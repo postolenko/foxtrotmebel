@@ -340,57 +340,82 @@ $(document).ready(function() {
 
         // ----------------------------------------------------------------
 
-        $(".close-popup, .popup-box-bg ").click(function() {
+        $(function() {
 
-            $(".popup-box").fadeOut(300);
+            $(".close-popup, .popup-box-bg ").click(function() {
 
-        });
+                $(".popup-box").fadeOut(300);
 
-        $(".img-material-box").click(function() {
+            });
 
-            $(this).prev("input").click();
+            $(".img-material-box").click(function() {
 
-        });
+                $(this).prev("input").click();
 
-        $(".to-top").click(function() {
+            });
 
-            $(".mCSB_container").animate({"top" : 0 + "px"}, 350);
+            $(".to-top").click(function() {
 
-        });
+                $(".mCSB_container").animate({"top" : 0 + "px"}, 350);
 
-        $(".reset-btn").click(function() {
+            });
 
-            $(".popup input").removeAttr('checked');
+            $(".reset-btn").click(function() {
 
-            $(".popup input").removeAttr('checked');
+                $(".popup input").removeAttr('checked');
 
-            $('.popup select').val("0");
+                $(".popup input").removeAttr('checked');
 
-            $('.popup .count-elements-val').val("0");
+                $('.popup select').val("0");
+
+                $('.popup .count-elements-val').val("0");
+
+            });
 
         });
 
         // ----------------------------------------------------------------
 
-        $(".count-elements button").click(function() {
+        $(function() {
 
-            countElementsInputIndex = $(this).parent(".count-elements").index(".count-elements");
+            $(".count-elements button").click(function() {
 
-            countElementsVal = $(".count-elements-val:eq("+ countElementsInputIndex +")").val();
+                countElementsInputIndex = $(this).parent(".count-elements").index(".count-elements");
 
-            if( $(this).hasClass("elem-minus-btn") && countElementsVal > 0 ) {
+                countElementsVal = $(".count-elements-val:eq("+ countElementsInputIndex +")").val();
 
-                countElementsVal--;
+                if( $(this).hasClass("elem-minus-btn") && countElementsVal > 0 ) {
 
-            } else if( $(this).hasClass("elem-plus-btn") ) {
+                    countElementsVal--;
 
-                countElementsVal++;
+                } else if( $(this).hasClass("elem-plus-btn") ) {
 
-            }
+                    countElementsVal++;
 
-            $(".count-elements-val:eq("+ countElementsInputIndex +")").val(countElementsVal);
+                }
+
+                $(".count-elements-val:eq("+ countElementsInputIndex +")").val(countElementsVal);
+
+            });
 
         });
+
+        // ----------------------------------------------------------------
+
+        $(function() {
+
+            $(".price-wrapp").css({ 
+                                    "height" : $(".price-wrapp").width() + "px",
+                                    "width" : $(".price-wrapp").width() + "px"
+                                });
+
+            setTimeout(function() {
+
+                $(".price-box").css({ "top" : ( $(".price-wrapp").outerHeight(true) - $(".price-box").height() ) / 2 + "px" });
+
+            }, 330);
+
+        });   
 
         // ----------------------------------------------------------------
 
