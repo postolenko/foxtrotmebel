@@ -67,6 +67,12 @@ $(document).ready(function() {
 
         // ----------------------------------------------------------------------------
 
+
+        $(".price-sect").css({"min-height" : $(".price-wrapp").height() * 1.3 + "px"});
+
+
+        // ----------------------------------------------------------------------------
+
         getPromoHeadPosition();
 
         getPromoSlideImgSize();
@@ -248,78 +254,6 @@ $(document).ready(function() {
     
 
 
-    // --------------------------------------------------------
-
-
-
-        function getPromoSlideImgSize() {
-
-            clearTimeout(positionInterval);
-
-            // var promoSlideCount = $(".promo-slide").length - 1;
-
-            // var promoSlideCountIndex;
-
-            // var promoSlideWidth;
-            // var promoSlideHeight;
-
-            // var promoWidthImg;
-            // var promoHeightImg;
-
-            promoSlideCount = $(".promo-slide").length - 1;
-
-            promoSlideCountIndex;
-
-            promoSlideWidth;
-            promoSlideHeight;
-
-            promoWidthImg;
-            promoHeightImg;
-
-            positionInterval = setTimeout(function() {
-
-
-                for( promoSlideCountIndex = 0; promoSlideCountIndex <= promoSlideCount; promoSlideCountIndex++ ) {
-
-                    promoSlideWidth = $(".promo-slide:eq("+ promoSlideCountIndex +")").outerWidth();
-
-                    promoSlideHeight = $(".promo-slide:eq("+ promoSlideCountIndex +")").outerHeight();
-
-                    promoWidthImg = $(".promo-slide:eq("+ promoSlideCountIndex +") img").outerWidth();
-
-                    promoHeightImg = $(".promo-slide:eq("+ promoSlideCountIndex +") img").outerHeight();
-
-                    if( promoHeightImg < promoSlideHeight || promoWidthImg < promoSlideWidth ) {
-
-                        $(".promo-slide:eq("+ promoSlideCountIndex  +") img").css({
-                            "min-width" : promoSlideWidth + "px",
-                            "min-height" : promoSlideHeight + "px",
-                            "height" : "auto"
-                        });
-
-                    }
-
-                    if( promoWidthImg > promoSlideWidth ) {
-
-                        $(".promo-slide:eq("+ promoSlideCountIndex +") img").css({
-
-                            "margin-left" : -( ( promoWidthImg - promoSlideWidth ) / 2 ) + "px"
-
-                        });
-
-                    }
-
-
-                }
-
-
-            }, 500);
-
-                   
-
-        }
-
-
         // ----------------------------------------------------------------
 
         $(function() {
@@ -404,6 +338,8 @@ $(document).ready(function() {
 
         $(function() {
 
+            $(".price-sect").css({"min-height" : $(".price-wrapp").height() * 1.3 + "px"});
+
             $(".price-wrapp").css({ 
                                     "height" : $(".price-wrapp").width() + "px",
                                     "width" : $(".price-wrapp").width() + "px"
@@ -428,6 +364,77 @@ $(document).ready(function() {
                 "left" : ( $(".promo-block").outerWidth(true) - $(".promo-h").outerWidth(true) ) / 2  + "px"
 
             });
+
+        }
+
+            // --------------------------------------------------------
+
+
+
+        function getPromoSlideImgSize() {
+
+            clearTimeout(positionInterval);
+
+            // var promoSlideCount = $(".promo-slide").length - 1;
+
+            // var promoSlideCountIndex;
+
+            // var promoSlideWidth;
+            // var promoSlideHeight;
+
+            // var promoWidthImg;
+            // var promoHeightImg;
+
+            promoSlideCount = $(".promo-slide").length - 1;
+
+            promoSlideCountIndex;
+
+            promoSlideWidth;
+            promoSlideHeight;
+
+            promoWidthImg;
+            promoHeightImg;
+
+            positionInterval = setTimeout(function() {
+
+
+                for( promoSlideCountIndex = 0; promoSlideCountIndex <= promoSlideCount; promoSlideCountIndex++ ) {
+
+                    promoSlideWidth = $(".promo-slide:eq("+ promoSlideCountIndex +")").outerWidth();
+
+                    promoSlideHeight = $(".promo-slide:eq("+ promoSlideCountIndex +")").outerHeight();
+
+                    promoWidthImg = $(".promo-slide:eq("+ promoSlideCountIndex +") img").outerWidth();
+
+                    promoHeightImg = $(".promo-slide:eq("+ promoSlideCountIndex +") img").outerHeight();
+
+                    if( promoHeightImg < promoSlideHeight || promoWidthImg < promoSlideWidth ) {
+
+                        $(".promo-slide:eq("+ promoSlideCountIndex  +") img").css({
+                            "min-width" : promoSlideWidth + "px",
+                            "min-height" : promoSlideHeight + "px",
+                            "height" : "auto"
+                        });
+
+                    }
+
+                    if( promoWidthImg > promoSlideWidth ) {
+
+                        $(".promo-slide:eq("+ promoSlideCountIndex +") img").css({
+
+                            "margin-left" : -( ( promoWidthImg - promoSlideWidth ) / 2 ) + "px"
+
+                        });
+
+                    }
+
+
+                }
+
+
+            }, 500);
+
+                   
 
         }
 

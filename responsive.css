@@ -873,14 +873,24 @@
 	    height: 200px;
 	}
 
-	.cart-callback-form h2 {
-	    font-size: 42px;
-	    line-height: 49px;
+	.price-box .cart-price {
+	    font-size: 46px;
+	    line-height: 56px;
+	}
+
+	.price-box .cart-price:after {
+		font-size: 38px;
+		line-height: 56px;
 	}
 
 	/*-- /Card Page - Section 1 --*/
 
 	/*-- Card Page - Section 2 --*/
+
+	.cart-callback-form h2 {
+	    font-size: 42px;
+	    line-height: 49px;
+	}
 
 	.cart-form-sect {
 		padding: 136px 0 68px 0;
