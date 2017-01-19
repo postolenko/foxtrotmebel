@@ -3356,7 +3356,7 @@ section.main-set-2 {
     text-align: center;
     position: relative;
     z-index: 2;
-    padding: 14px;
+    min-width: 218px !important;
 }
 
 .price-box p {
