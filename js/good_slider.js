@@ -5,8 +5,26 @@ $(document).ready(function() {
     var bigPhotoWidth;
 	var sliderBigPhotoWidth;
 
+	// ----------------------------
+
+	var bigPhotoPath;
+	var previewPhotoPath;
+	var miniatureIndex;
+	var srcVal;
+	var indexOfSlash;
+	var nameFile;
+
+	// ----------------------------
+
+	var bigPhotoSrc;
+	var indexOfSlashBigPhoto;
+	var nameFileBigPhoto;
+
+	// ----------------------------
+
 
     getBigSliderPhotoImg();
+
 
     $(window).resize(function() {
 
@@ -15,30 +33,29 @@ $(document).ready(function() {
     });
 
 
-
 	$(function() {
 
-		var bigPhotoPath = "good_slider/big_photos/";
-		var previewPhotoPath = "good_slider/preview/";
+		bigPhotoPath = "good_slider/big_photos/";
+		previewPhotoPath = "good_slider/preview/";
 
 
 		$(".miniature-box").click( function() {
 
-			var miniatureIndex = $(".miniature-box").index(this);
+			miniatureIndex = $(".miniature-box").index(this);
 
-			var srcVal = $(".miniature-box:eq("+ miniatureIndex +") img").attr("src");
+			srcVal = $(".miniature-box:eq("+ miniatureIndex +") img").attr("src");
 
-			var indexOfSlash = srcVal.lastIndexOf("/");
+			indexOfSlash = srcVal.lastIndexOf("/");
 
-			var nameFile = srcVal.slice(indexOfSlash + 1);
+			nameFile = srcVal.slice(indexOfSlash + 1);
 
-			$(".big_photo").css({"opacity" : .3});
+			$(".good-slider-big-photo img.big_photo").attr("src", bigPhotoPath + nameFile);
 
-			$(".big_photo").attr("src", bigPhotoPath + nameFile);
+			setTimeout(function() {
 
-			$(".big_photo").css({"opacity" : 1});
+				getBigSliderPhotoImg();
 
-			getBigSliderPhotoImg();
+			}, 70);
 
 		});
 
@@ -47,11 +64,11 @@ $(document).ready(function() {
 
 			$(".preview-slide").fadeIn(300);
 
-			var bigPhotoSrc = $(".big_photo").attr("src");
+			bigPhotoSrc = $(".big_photo").attr("src");
 
-			var indexOfSlashBigPhoto = bigPhotoSrc.lastIndexOf("/");
+			indexOfSlashBigPhoto = bigPhotoSrc.lastIndexOf("/");
 
-			var nameFileBigPhoto = bigPhotoSrc.slice(indexOfSlashBigPhoto + 1);
+			nameFileBigPhoto = bigPhotoSrc.slice(indexOfSlashBigPhoto + 1);
 
 			$(".preview-img").attr("src", previewPhotoPath + nameFileBigPhoto);
 
@@ -63,24 +80,22 @@ $(document).ready(function() {
 
 		});
 
-
-
 	});
 
 
     function getBigSliderPhotoImg() {
 
-       	bigPhotoHeight = $(".good-slider-big-photo img").height();
+       	bigPhotoHeight = $(".good-slider-big-photo img.big_photo").outerHeight(true);
 
        	sliderBigPhotoHeight = $(".good-slider-big-photo").height();
 
-       	bigPhotoWidth = $(".good-slider-big-photo img").width();
+       	bigPhotoWidth = $(".good-slider-big-photo img.big_photo").outerWidth(true);
 
        	sliderBigPhotoWidth = $(".good-slider-big-photo").width();
 
         if( bigPhotoHeight < sliderBigPhotoHeight || bigPhotoWidth < sliderBigPhotoWidth ) {
 
-            $(".good-slider-big-photo img").css({
+            $(".good-slider-big-photo img.big_photo").css({
                 "min-width" : sliderBigPhotoWidth + "px",
                 "min-height" : sliderBigPhotoHeight + "px"
             });

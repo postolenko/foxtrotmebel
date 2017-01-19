@@ -67,10 +67,6 @@
 
 @media only screen and (max-width: 768px) {
 
-/*	.row {
-		padding: 0 2%;
-	}*/
-
 	/*-- Header --*/
 
 	.header-row-1 {
@@ -208,11 +204,6 @@
 
     /*-- Catalog Page - Section 1 --*/
 
-    .catalog-section {
-/*    	padding-left: 110px;
-    	padding-right: 110px;*/
-    }
-
 	.good-model {
 	    width: 82%;
 	    margin: 0 auto;
@@ -241,7 +232,6 @@
 	/*-- Product Page - Section 1 --*/
 
 	.good-slider {
-	    /*padding: 40px 108px 35px 108px;*/
 	    padding: 40px 0 35px 0;
 	}
 
@@ -490,12 +480,10 @@
 
 	.advantages-thumbnails .thumbnail-icon-box {
 	    display: table-cell;
-	    /*display: inline-block;*/
 	    vertical-align: middle;
 	}
 
 	.advantages-thumbnails .thumbnail p {
-		/*display: inline-block;*/
 		display: table-cell;
 	    vertical-align: middle;
 		padding: 10px 0 10px 13%;
@@ -553,7 +541,6 @@
 
 	.good-model-thumbnails .good-thumbnail-box {
 		display: block;
-	    /*width: 90%;*/
 	    width: 265px;
 	    margin: 0 auto;
 	    padding: 30px 0;
