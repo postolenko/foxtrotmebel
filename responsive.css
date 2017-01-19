@@ -581,6 +581,10 @@
 		padding: 75px 0 90px 0;
 	}
 
+	.pagination li.pagination-arrow-item {
+	    display: none;
+	}
+
 	.callback-form-sect h2 {
 		font-size: 36px;
 		line-height: 42px;
