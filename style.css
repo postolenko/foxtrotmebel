@@ -3383,24 +3383,13 @@ section.main-set-2 {
     vertical-align: top;
 }
 
-/*.price-box .cart-price:after {
-    display: inline-block;
-    vertical-align: top;
-    font-family: "FontAwesome";
-    content: "\f158";
-    font-size: 42px;
-    line-height: 60px;
-    color: #ffffff;
-    padding: 0 0 0 6%;
-}*/
-
 .cart-price .fa-rub {
     display: table-cell;
     vertical-align: top;
     font-size: 42px;
     line-height: 60px;
     color: #ffffff;
-    padding: 0 0 0 4%;
+    padding: 0 0 0 3%;
 }
 
 /*-- /Catr Page -- Section - 1 --*/
