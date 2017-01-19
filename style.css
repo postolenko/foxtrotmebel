@@ -3375,7 +3375,7 @@ section.main-set-2 {
     color: #ffffff;
 }
 
-.price-box .cart-price:after {
+/*.price-box .cart-price:after {
     display: inline-block;
     vertical-align: top;
     font-family: "FontAwesome";
@@ -3384,6 +3384,15 @@ section.main-set-2 {
     line-height: 60px;
     color: #ffffff;
     padding: 0 0 0 6%;
+}*/
+
+.cart-price .fa-rub {
+    display: inline-block;
+    vertical-align: top;
+    font-size: 42px;
+    line-height: 60px;
+    color: #ffffff;
+    padding: 0 0 0 4%;
 }
 
 /*-- /Catr Page -- Section - 1 --*/
