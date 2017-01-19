@@ -341,8 +341,8 @@ $(document).ready(function() {
             $(".price-sect").css({"min-height" : $(".price-wrapp").height() * 1.3 + "px"});
 
             $(".price-wrapp").css({ 
-                                    "height" : $(".price-wrapp").width() + "px",
-                                    "width" : $(".price-wrapp").width() + "px"
+                                    "height" : $(".price-wrapp").outerWidth(true) + "px",
+                                    "width" : $(".price-wrapp").outerWidth(true) + "px"
                                 });
 
             setTimeout(function() {

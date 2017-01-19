@@ -878,10 +878,19 @@
 	    line-height: 56px;
 	}
 
-	.price-box .cart-price:after {
+	.cart-price .fa-rub {
+	    display: inline-block;
+	    vertical-align: top;
+	    font-size: 41px;
+	    line-height: 60px;
+	    color: #ffffff;
+	    padding: 0 0 0 4%;
+	}
+
+/*	.price-box .cart-price:after {
 		font-size: 38px;
 		line-height: 56px;
-	}
+	}*/
 
 	/*-- /Card Page - Section 1 --*/
 
