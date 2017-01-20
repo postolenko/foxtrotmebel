@@ -3804,7 +3804,7 @@ footer {
     max-width: 34px;
     width: 9%;
     height: 32px;
-    overflow: hidden;
+    /*overflow: hidden;*/
     cursor: pointer;
     background: transparent;
     border: 1px solid transparent;
